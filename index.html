@@ -1,58 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="JPK — independent app development. The official developer website.">
-    <meta name="theme-color" content="#f4f2eb">
-    <title>JPK — Independent App Development</title>
-    <style>
-      :root { color-scheme: light; font-family: Arial, Helvetica, sans-serif; color: #242822; background: #f4f2eb; }
-      * { box-sizing: border-box; }
-      body { margin: 0; }
-      .page { max-width: 1440px; min-height: 100svh; margin: auto; padding: 36px 6vw 24px; display: flex; flex-direction: column; }
-      header, footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-      header { padding-bottom: 28px; border-bottom: 1px solid #cccfc4; }
-      .wordmark { font-size: 25px; font-weight: 800; letter-spacing: -.08em; }
-      .label { font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
-      .developer { display: flex; align-items: center; gap: 10px; }
-      .dot { width: 7px; height: 7px; border-radius: 50%; background: #586449; flex-shrink: 0; }
-      main { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 64px 0 80px; }
-      .eyebrow { margin: 0 0 14px; color: #586449; }
-      h1 { margin: 0 0 20px -.055em; font-size: clamp(112px, 24vw, 320px); font-weight: 800; letter-spacing: -.09em; line-height: .9; }
-      h2 { font-size: clamp(24px, 3.3vw, 44px); line-height: 1.2; font-weight: 400; letter-spacing: -.035em; margin: 22px 0 18px; max-width: 600px; }
-      .intro { max-width: 440px; margin: 0; font-size: 16px; line-height: 1.7; color: #596052; }
-      .profile { align-self: flex-start; margin-top: 32px; padding: 14px 20px; border: 1px solid #7b856e; border-radius: 4px; text-decoration: none; font-size: 14px; color: inherit; }
-      .profile:hover { background: #e6e9dd; }
-      a:focus-visible { outline: 3px solid #586449; outline-offset: 5px; }
-      footer { border-top: 1px solid #cccfc4; padding-top: 22px; font-size: 12px; line-height: 1.6; color: #596052; }
-      footer p { margin: 0; }
-      @media (max-width: 480px) {
-        .page { padding: 24px 24px 20px; }
-        header { gap: 12px; padding-bottom: 22px; }
-        .label { font-size: 9px; letter-spacing: .12em; }
-        main { padding: 64px 0; }
-        footer { align-items: flex-start; flex-direction: column; gap: 4px; }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="page">
-      <header>
-        <span class="wordmark" aria-hidden="true">JPK</span>
-        <span class="developer label"><span class="dot" aria-hidden="true"></span>Independent developer</span>
-      </header>
-      <main>
-        <p class="eyebrow label">Ideas into experiences</p>
-        <h1>JPK</h1>
-        <h2>Independent app development.</h2>
-        <p class="intro">A home for the ideas, experiments, and future releases of JPK.</p>
-        <a class="profile" href="https://github.com/jpkkh24">Find JPK on GitHub <span aria-hidden="true">↗</span></a>
-      </main>
-      <footer>
-        <p>© JPK</p>
-        <p>Official developer website</p>
-      </footer>
-    </div>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JPK is an independent app developer. Meet Rat Rush, our first game: four ways to test your reflexes, timing and strategy.">
+  <meta name="theme-color" content="#f4f2eb">
+  <meta property="og:title" content="JPK ? Independent App Development">
+  <meta property="og:description" content="Small ideas. Playful experiences. Meet Rat Rush, the first game from JPK.">
+  <meta property="og:image" content="https://jpkkh24.github.io/assets/rat-rush-icon.png">
+  <meta property="og:url" content="https://jpkkh24.github.io/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://jpkkh24.github.io/">
+  <link rel="stylesheet" href="assets/site.css">
+  <title>JPK ? Independent App Development</title>
+</head>
+<body class="studio">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="studio-wrap">
+    <header class="studio-header">
+      <a class="wordmark" href="./" aria-label="JPK home">JPK</a>
+      <nav aria-label="Main navigation"><a href="#apps">Our apps</a><a href="mailto:jpk.kh.24@gmail.com">Contact</a></nav>
+    </header>
+    <main id="main">
+      <section class="studio-intro" aria-labelledby="studio-title">
+        <p class="eyebrow">Independent app development</p>
+        <h1 id="studio-title">Small ideas.<br>Playful experiences.</h1>
+        <p>A home for the things we make. Thoughtfully built, full of character, and made to become part of your day.</p>
+      </section>
+      <section id="apps" class="first-app" aria-labelledby="app-title">
+        <div class="feature-copy">
+          <p class="eyebrow">Introducing our first game</p>
+          <h2 id="app-title">Rat Rush</h2>
+          <p>Little rats. Big scores. An offline arcade with four distinct ways to catch, chase, guide, and outsmart.</p>
+          <span class="platform-note">Android ? Made with Solana Seeker in mind</span>
+          <a class="button primary" href="rat-rush/">Meet Rat Rush <span aria-hidden="true">?</span></a>
+        </div>
+        <a class="feature-art" href="rat-rush/" aria-label="Explore Rat Rush"><img src="assets/rat-rush-icon.png" width="512" height="512" alt="The Rat Rush rat reaching out through a bright blue and yellow burst"></a>
+      </section>
+      <section class="studio-contact" aria-labelledby="contact-title">
+        <div><p class="eyebrow">Say hello</p><h2 id="contact-title">Have something in mind?</h2></div>
+        <a href="mailto:jpk.kh.24@gmail.com">jpk.kh.24@gmail.com <span aria-hidden="true">?</span></a>
+      </section>
+    </main>
+    <footer class="studio-footer"><p>? 2026 JPK ? Independent developer</p><nav aria-label="Footer"><a href="rat-rush/privacy/">Privacy policy</a><a href="rat-rush/terms/">Terms of use</a><a href="https://github.com/jpkkh24">GitHub ?</a></nav></footer>
+  </div>
+</body>
 </html>
